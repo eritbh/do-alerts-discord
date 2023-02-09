@@ -55,9 +55,9 @@ fn something(
 		.expect("there should be messages");
 
 	// Delete stuff
-	// session
-	// 	.store(&seqs, r#"+FLAGS (\Deleted)"#)
-	// 	.expect("the messages should be marked deleted");
+	session
+		.store(&seqs_str, r#"+FLAGS (\Deleted)"#)
+		.expect("the messages should be marked deleted");
 
 	// Map messages into their bodies
 	messages
