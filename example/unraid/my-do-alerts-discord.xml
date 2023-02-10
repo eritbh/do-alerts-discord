@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+	<Name>do-alerts-discord</Name>
+	<Repository>ghcr.io/eritbh/do-alerts-discord:main</Repository>
+	<Registry/>
+	<Network>bridge</Network>
+	<MyIP/>
+	<Shell>sh</Shell>
+	<Privileged>false</Privileged>
+	<Support/>
+	<Project/>
+	<Overview>Forwards DigitalOcean resource monitoring alerts from email to Discord. More information: https://github.com/eritbh/do-alerts-discord</Overview>
+	<Category/>
+	<WebUI/>
+	<TemplateURL/>
+	<Icon>https://archive.eritbh.me/unraid-template-icons'/do-alerts.png</Icon>
+	<ExtraParams/>
+	<PostArgs/>
+	<CPUset/>
+	<DateInstalled>1676064416</DateInstalled>
+	<DonateText/>
+	<DonateLink/>
+	<Requires/>
+	<Config Name="IMAP: Domain" Target="IMAP_DOMAIN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="IMAP: Port" Target="IMAP_PORT" Default="993" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="IMAP: Username" Target="IMAP_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="IMAP: Password" Target="IMAP_PASS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+	<Config Name="Discord: Webhook URL" Target="DISCORD_WEBHOOK_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>

@@ -12,6 +12,8 @@ Set up your DO monitoring alerts to notify via email. Provide IMAP credentials f
 
 The program connects to your mail server via IMAP, looks for received DO notification emails, parses them and sends the information on to Discord, then permanently deletes the emails. It performs one check, forwards any notifications it finds, and exits. Run it periodically via `cron` or similar.
 
+I run this via Docker on my unRAID box using the configuration in [the `examples` directory](/examples).
+
 ## Environment
 
 `IMAP_DOMAIN`, `IMAP_PORT`, `IMAP_USER`, `IMAP_PASS` set authentication to your mail server. `DISCORD_WEBHOOK_URL` is obtained by creating a Discord webhook in the channel where you want messages to be delivered.
